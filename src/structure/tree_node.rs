@@ -21,8 +21,6 @@ impl TreeNode {
 
 impl std::fmt::Display for TreeNode {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        
-        
         let left = match &self.left {
             Some(it) => it.borrow().val.to_string(),
             None => String::from("null"),
